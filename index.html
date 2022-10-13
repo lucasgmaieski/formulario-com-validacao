@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    
+    <main>
+        <section class="info">
+            <h1>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+            <p>caso tenha ficado com quelauer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+        <section class="formulario-container">
+            <form action="https://github.com/lucasgmaieski" method="get" class="formulario" target="_blank">
+                <div class="inputs ">
+                    <div class="input-icons">
+                        <span class="material-symbols-outlined icon"> account_circle</span>
+                        <input class="input-field" type="text" name="nome" id="nome" placeholder="Nome Completo *" >
+                    </div>
+                    <label for="nome" class="obrigatorio">campo obrigatório</label>
+                </div>
+
+                <div class="inputs ">
+                    <div class="input-icons">
+                        <span class="material-symbols-outlined icon"> mail</span>
+                        <input class="input-field" type="email" name="email" id="email" placeholder="Email *" >
+                    </div>
+                    <label for="email" class="obrigatorio">campo obrigatório</label>
+                </div>
+
+                <div class="inputs ">
+                    <div class="input-icons">
+                        <span class="material-symbols-outlined icon"> call</span>
+                        <input class="input-field" type="tel" name="telefone" id="telefone" placeholder="Telefone *" >
+                    </div>
+                    <label for="telefone" class="obrigatorio">campo obrigatório</label>
+                </div>
+
+                <div class="inputs ">
+                    <div class="input-icons" >
+                        <span class="material-symbols-outlined icon"> chat_bubble</span>
+                        <textarea class="input-field" name="mensagem" cols="30" rows="10" id="mensagem" placeholder="Mensagem *" ></textarea>
+                    </div>
+                    <label for="mensagem" class="obrigatorio">campo obrigatório</label>
+                </div>
+
+                <p>*campo obrigatórios</p>
+                <input type="submit" value="Enviar" class="btn">
+            </form>
+        </section>
+    </main>
+    <script type="text/javascript" src="src/js/validacao.js"></script>
 </body>
 </html>
